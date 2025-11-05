@@ -7,11 +7,11 @@ export function subtract(numbers) {
 }
 
 export function multiply(numbers) {
-  return numbers.reduce((result, num) => result * num, 1);
+  return numbers.reduce((product, num) => product * num, 1);
 }
 
 export function divide(numbers) {
-  if (numbers.includes(0)) return "Error: Division by zero";
-  return numbers.slice(1).reduce((result, num) => result / num, numbers[0]);
+  if (numbers.includes(0)) return "Error: Division by zero!";
+  return numbers.slice(1).reduce((acc, num) => acc / num, numbers[0]);
 }
 
